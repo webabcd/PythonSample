@@ -2,8 +2,8 @@
 
 
 #### python 基础
-1、基础 summary.py
+1. 基础 summary.py
 
 #### python 数据类型
-1、数字类型 number.py
-2、字符串类型 string.py   
+1. 数字类型 number.py
+2. 字符串类型 string.py   
