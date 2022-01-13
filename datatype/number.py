@@ -4,7 +4,7 @@ a = 1       # 整型
 b = 3.14    # 浮点型
 c = True    # 布尔型，其实是整型（True 是 1，False 是 0）
 d = a + b + c
-print(a, b, c, d) # 1 3.14 True 5.14
+print(a, b, c, d) # 1 3.14 True 5.140000000000001
 
 e = 30          # 十进制
 f = 0o36        # 八进制
