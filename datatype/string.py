@@ -62,3 +62,8 @@ print("%.2f" % 3.141592) # 3.14
 # 通过 f 格式化字符串
 k = f"我是 {h}, 今年 {i} 岁"
 print(k) # 我是 webabcd, 今年 40 岁
+
+# 通过 format() 格式化字符串
+print('{}, {}'.format('web', 'abcd')) # web, abcd
+print('{1}, {0}, {age}'.format('abcd', 'web', age=40)) # web, abcd, 40
+print('{0:.2f}'.format(3.1415926)) # 3.14
