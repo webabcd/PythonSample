@@ -11,15 +11,15 @@ class MyClass(Class1, Class2):
         Class1.__init__(self, name, age)
         Class2.__init__(self, level)
 
-    # 重写父类的方法
+    # 重写父类的函数
     def toString(self):
         return f"name:{self.name}, age:{self.age}, level:{self.level}"
 
 
 '''
 注：
-如果多个父类有相同的方法的话，那么你调用的时候调用的是哪个呢？
-调用的是前面的那个类的方法
+如果多个父类有相同的函数的话，那么你调用的时候调用的是哪个呢？
+调用的是前面的那个类的函数
 比如 class MyClass(a, b, c):
-a, b, c 中有相同的方法，那么你调用会是 a 中的方法
+a, b, c 中有相同的函数，那么你调用会是 a 中的函数
 '''

@@ -16,7 +16,7 @@ while True:
 # 迭代完成
 
 
-# 定义一个支持被转换为迭代器的类（要实现 __iter__() 方法和 __next__() 方法）
+# 定义一个支持被转换为迭代器的类（要实现 __iter__() 函数和 __next__() 函数）
 class Class1:
     def __iter__(self):
         self.a = 0

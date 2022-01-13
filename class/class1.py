@@ -16,12 +16,12 @@ class Class1:
         
         self.__id = "0001"
 
-    # 定义公共方法
+    # 定义公共函数
     # 第一个参数必须是 self
     def toString(self):
         return self.__getString()
 
-    # 双下划线开头用于定义私有方法（外部不能调用，子类也不能调用）
+    # 双下划线开头用于定义私有函数（外部不能调用，子类也不能调用）
     # 第一个参数必须是 self
     def __getString(self):
         return f"id:{self.__id}, name:{self.name}, age:{self.age}, country:{self.country}"

@@ -63,3 +63,25 @@ i_c = [1, 2, 3]
 print(i_a, i_b, i_c) # 0 [1, 2, 3] [1, 2, 3]
 i(i_a, i_b, i_c)
 print(i_a, i_b, i_c) # 0 [1, 2, 3] [1, 2, 3, 4]
+
+
+# 函数的内部变量和外部变量是有作用域的概念的
+num = 1 # 这个是全局变量
+def fun1():
+    global num # 需要使用 global 才能操作全局变量
+    print(num) # 1
+    num = 123
+    print(num) # 123
+fun1()
+print(num) # 123
+
+def fun2():
+    num = 10 # 这个是 fun3() 函数的外层非全局变量
+    def fun3():
+        nonlocal num  # 需要使用 nonlocal 才能操作外层非全局变量
+        print(num) # 10
+        num = 100
+        print(num) # 100
+    fun3()
+    print(num) # 100
+fun2()

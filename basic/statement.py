@@ -43,3 +43,8 @@ for i, v in enumerate(['x', 'y', 'z']): # v 是遍历出的值，i 是其对应�
 # 0 x
 # 1 y
 # 2 z
+
+# if/for/while/try 是不会引入新的作用域的（即这些语句内定义的变量，在外部也是可以访问的）
+if True:
+    d = "abc"
+print(d) # abc

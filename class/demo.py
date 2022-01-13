@@ -16,5 +16,5 @@ print(a["a"]) # myvalue_abc
 b = MyClass("webabcd", 40, 100)
 b.country = "china"
 print(b.toString()) # name:webabcd, age:40, level:100
-# 调用父类的方法
+# 调用父类的函数
 print(super(MyClass, b).toString()) # id:0001, name:webabcd, age:40, country:china
