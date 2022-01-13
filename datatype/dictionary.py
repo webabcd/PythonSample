@@ -20,18 +20,22 @@ print(a["k2"]) # v222
 del a["k2"]
 print(a) # {'k1': 'v111', 2: 100}
 
-# 迭代字典的 key
+# 遍历字典的 key
 for x in a.keys():
   print(x)
-# 迭代字典的 value
+# 遍历字典的 value
 for x in a.values():
   print(x)
-# 迭代字典的 key/value
+# 遍历字典的 key/value
 for k, v in a.items():
   print(k, v)
-# 直接迭代字典，实际迭代出的是 key
+# 直接遍历字典，实际遍历出的是 key
 for x in a:
   print(x)
+
+# 判断字典中是否包含指定的 key
+print("k1" in {'k1': 'v1'}) # True
+print({'k1': 'v1'}.__contains__("k1")) # True
 
 # 定义一个空字典
 print(dict()) # {}

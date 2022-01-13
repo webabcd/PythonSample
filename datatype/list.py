@@ -38,7 +38,7 @@ d = (b + c) * 2
 print(d) # [1, 2, 'a', 'b', 1, 2, 'a', 'b']
 # 通过 in, not in 判断列表中是否有指定的元素
 print(1 in d, 1 not in d) # True False
-# 列表是可迭代的
+# 列表是可遍历的
 for x in d:
     print(x)
 
@@ -48,3 +48,22 @@ print(list("webabcd")) # ['w', 'e', 'b', 'a', 'b', 'c', 'd']
 print(list()) # []
 # 定义一个空列表
 print([]) # []
+
+
+# 如何在遍历时拿到值对应的索引位置？
+for i, v in enumerate(['x', 'y', 'z']): # v 是遍历出的值，i 是其对应的索引位置
+    print(i, v)
+# 上面语句的运行结果如下
+# 0 x
+# 1 y
+# 2 z
+
+# 如何同时遍历 2 个列表？
+e = ['a', 'b', 'c']
+f = ['x', 'y', 'z']
+for x, y in zip(e, f):
+    print(x, y)
+# 上面语句的运行结果如下
+# a x
+# b y
+# c z

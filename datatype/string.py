@@ -28,7 +28,7 @@ print(c * 2) # webabcdwebabcd
 print("ab" in c) # True
 # not in 是否不包含
 print("ab" not in c) # False
-# 字符串是可迭代的
+# 字符串是可遍历的
 for x in "abc":
     print(x)
 

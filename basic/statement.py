@@ -35,3 +35,11 @@ for c in range(5):
     print("while c", c)
 else:
     print("else c", c)
+
+# 如何在遍历时拿到值对应的索引位置？
+for i, v in enumerate(['x', 'y', 'z']): # v 是遍历出的值，i 是其对应的索引位置
+    print(i, v)
+# 上面语句的运行结果如下
+# 0 x
+# 1 y
+# 2 z

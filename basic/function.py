@@ -15,8 +15,11 @@ print(b())
 
 # 有参数，有返回值的函数
 def c(a, b):
-    return a + b
-print(c(1, 2))
+    if (b == 0):
+        return None # None 的作用相当于其他语言的 null
+    return a / b
+print(c(1, 2)) # 0.5
+print(c(1, 0), c(1, 0) == None, type(None)) # None True <class 'NoneType'>
 
 # 支持在定义函数的时候为函数指定默认值
 def d(a, b, c = "ccc"):

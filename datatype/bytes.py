@@ -14,10 +14,10 @@ print(d) # b'abc'
 e = bytes.fromhex('61 62 63')
 print(e) # b'abc'
 
-# 字节是可迭代的，迭代出的数据是整型
+# 字节是可遍历的，遍历出的数据是整型
 print(e[0]) # 97
 for x in e:
-    print(x) # 迭代出的数据分别是 97 98 99
+    print(x) # 遍历出的数据分别是 97 98 99
 
 # 将字节类型转换为十六进制字符串
 print(e.hex()) # 616263

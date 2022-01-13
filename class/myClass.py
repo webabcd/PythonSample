@@ -1,0 +1,25 @@
+# 从 class1.py 文件中导入 Class1 类
+from class1 import Class1
+# 从 class2.py 文件中导入 Class2 类
+from class2 import Class2
+
+# 类的继承，支持多继承
+class MyClass(Class1, Class2):
+
+    def __init__(self, name, age, level):
+        # 调用父类的构造函数
+        Class1.__init__(self, name, age)
+        Class2.__init__(self, level)
+
+    # 重写父类的方法
+    def toString(self):
+        return f"name:{self.name}, age:{self.age}, level:{self.level}"
+
+
+'''
+注：
+如果多个父类有相同的方法的话，那么你调用的时候调用的是哪个呢？
+调用的是前面的那个类的方法
+比如 class MyClass(a, b, c):
+a, b, c 中有相同的方法，那么你调用会是 a 中的方法
+'''

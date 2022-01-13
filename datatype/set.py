@@ -10,7 +10,7 @@ a.add(3)
 a.add(3)
 a.add(3)
 print(a) # {1, 'b', 3, 2, 'a'}
-# 通过 update() 添加元素（参数值必须是可迭代的，update() 会将其迭代后的元素添加到集合）
+# 通过 update() 添加元素（参数值必须是可遍历的，update() 会将其遍历后的元素添加到集合）
 a.update(["c", "d"])
 print(a) # {1, 'b', 3, 2, 'c', 'd', 'a'}
 # 通过 remove() 删除指定的元素
@@ -22,7 +22,7 @@ print(a) # {'b', 3, 2, 'c', 'a'}
 
 # 通过 in, not in 判断集合中是否有指定的元素
 print(1 in a, 1 not in a)
-# 集合是可迭代的
+# 集合是可遍历的
 for x in a:
     print(x)
 

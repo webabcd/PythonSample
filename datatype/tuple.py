@@ -31,6 +31,6 @@ g = (e + f) * 2
 print(g) # (1, 2, 'a', 'b', 1, 2, 'a', 'b')
 # 通过 in, not in 判断元组中是否有指定的元素
 print(1 in g, 1 not in g) # True False
-# 元组是可迭代的
+# 元组是可遍历的
 for x in g:
     print(x)
