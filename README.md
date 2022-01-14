@@ -35,3 +35,4 @@
 1. 推导式 advanced/comprehension.py
 2. 迭代器 advanced/iterator.py
 3. 生成器 advanced/generator.py
+4. 多线程和锁 advanced/thread.py
