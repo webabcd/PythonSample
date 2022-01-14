@@ -20,9 +20,9 @@
 3. 函数 basic/function.py
 
 #### python 类
-1. 父类1（基础知识） class/class1.py
-2. 父类2 class/class2.py
-3. 子类 class/myClass.py
+1. 基类1（基础知识） class/class1.py
+2. 基类2 class/class2.py
+3. 子类 class/class3.py
 4. 类的使用 class/demo.py
 5. 自定义异常 class/exception.py
 
