@@ -16,7 +16,7 @@
 
 #### python 基础
 1. 运算符 basic/operators.py
-2. 语句 basic/statement.py
+2. 语句（if, while, for, try） basic/statement.py
 3. 函数 basic/function.py
 
 #### python 类
@@ -24,6 +24,7 @@
 2. 父类2 class/class2.py
 3. 子类 class/myClass.py
 4. 类的使用 class/demo.py
+5. 自定义异常 class/exception.py
 
 #### python 高级
 1. 推导式 advanced/comprehension.py

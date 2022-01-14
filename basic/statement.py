@@ -44,7 +44,19 @@ for i, v in enumerate(['x', 'y', 'z']): # v 是遍历出的值，i 是其对应�
 # 1 y
 # 2 z
 
-# if/for/while/try 是不会引入新的作用域的（即这些语句内定义的变量，在外部也是可以访问的）
+# try/except/else/finally 语句
+try:
+    raise Exception("异常信息") # 抛出一个异常
+except Exception as ex: # 捕获指定类型的异常
+    print(ex)
+except: # 捕获之前的 except 没有捕获到的异常
+    raise # 抛出当前异常
+else:
+    print("无异常时执行")
+finally:
+    print("无论发生什么都会执行")
+
+# if/while/for/try 是不会引入新的作用域的（即这些语句内定义的变量，在外部也是可以访问的）
 # class/function 是会引入新的作用域的（参见 function.py）
 if True:
     d = "abc"
