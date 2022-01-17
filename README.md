@@ -18,6 +18,7 @@
 1. 运算符 basic/operators.py
 2. 语句（if, while, for, try） basic/statement.py
 3. 函数 basic/function.py
+4. 文件写入和读取 basic/file.py
 
 #### python 类
 1. 基类1（基础知识） class/class1.py
@@ -35,8 +36,7 @@
 1. 推导式 advanced/comprehension.py
 2. 迭代器 advanced/iterator.py
 3. 生成器 advanced/generator.py
-4. 文件写入和读取 advanced/file.py
 
 #### python 标准库
 1. 多线程和线程同步 standard/thread.py
-
+2. 目录和文件管理 standard/os.py

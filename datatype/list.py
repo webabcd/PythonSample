@@ -70,3 +70,11 @@ for x, y in zip(e, f):
 # a x
 # b y
 # c z
+
+# 如果列表中的是元组，那么可以这么遍历
+g = [('a', 'b', 'c'), ('x', 'y', 'z')]
+for i, j, k in g:
+    print(i, j, k)
+# 上面语句的运行结果如下
+# a b c
+# x y z
