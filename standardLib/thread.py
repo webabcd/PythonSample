@@ -1,4 +1,4 @@
-# 通过 threading 实现多线程
+# 通过 import threading 实现多线程
 
 import threading
 import time
@@ -15,15 +15,17 @@ class MyThread(threading.Thread):
         myPrint(self.name + " 开始")
 
         temp = 0
+        start = time.perf_counter() # 获取设备开机到现在经过的秒数
         while True:
             if temp < 10:
                 myPrint(self.name + " 运行中")
-                time.sleep(0.2)
+                time.sleep(0.2) # 阻塞 0.2 秒
                 temp += 1
             else:
                 break
 
-        myPrint(self.name + " 退出")
+        end = time.perf_counter()
+        myPrint(f"{self.name} 运行了 {end-start} {start}秒，退出")
 
 # 通过 threading.Lock() 实现线程同步
 lock = threading.Lock()

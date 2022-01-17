@@ -1,4 +1,4 @@
-# 通过 os 实现目录和文件管理
+# 通过 import os 实现目录和文件管理
 
 import os
 

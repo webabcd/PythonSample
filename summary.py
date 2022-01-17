@@ -3,6 +3,7 @@
 # python 的变量都是指针，引用数据通过 GC 清理（没有被引用的数据会被清理）
 #        不可变类型有 Number数字, String字符串, Bytes字节，Tuple元组（指针不变，则值肯定无法改变；若要修改值，则指针必会改变）
 #        可变类型有 List列表, Set集合, Dictionary字典（指针不变，值可以发生变化）
+# python 文档 https://docs.python.org/3/
 
 
 # 单行注释

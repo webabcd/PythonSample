@@ -38,5 +38,9 @@
 3. 生成器 advanced/generator.py
 
 #### python 标准库
-1. 多线程和线程同步 standard/thread.py
-2. 目录和文件管理 standard/os.py
+1. 多线程和线程同步 standardLib/thread.py
+2. 目录和文件管理 standardLib/os.py
+3. 日期和时间 standardLib/time.py
+
+#### python 第三方库
+1. 
