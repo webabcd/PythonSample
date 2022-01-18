@@ -36,6 +36,7 @@
 1. 推导式 advanced/comprehension.py
 2. 迭代器 advanced/iterator.py
 3. 生成器 advanced/generator.py
+4. zip（将多个可迭代对象压缩为一个可迭代对象，将一个可迭代对象解压缩为多个可迭代对象） advanced/zip.py
 
 #### python 标准库
 1. 多线程和线程同步 standardLib/thread.py
@@ -43,4 +44,5 @@
 3. 日期和时间 standardLib/time.py
 
 #### python 第三方库
-1. 
+1. openpyxl - excel数据处理 thirdLib/openpyxl/sample1.py
+1. openpyxl - excel样式处理 thirdLib/openpyxl/sample2.py

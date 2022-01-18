@@ -27,12 +27,16 @@ print(bool(0)) # False
 print(bool(-1.2)) # True
 
 d = [1, 2, 3]
-# 转换为集合
+# 列表转换为集合
 e = set(d) # {1, 2, 3}
 print(e)
-# 转换为列表
+# 集合转换为列表
 f = list(e) # [1, 2, 3]
 print(f)
-# 转换为元组
+# 列表转换为元组
 g = tuple(f) # (1, 2, 3)
 print(g)
+# 元组转换为列表
+h = list(g) # [1, 2, 3]
+print(h)
+
