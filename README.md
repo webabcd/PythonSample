@@ -29,8 +29,8 @@
 
 #### python 模块，包
 1. 模块1和模块2 module/module1.py, module/module2.py
-2. 模块的引用 module/demo.py
-3. 包 module/player/
+2. 包 module/player/
+3. 模块和包的引用 module/demo.py
 
 #### python 高级
 1. 推导式 advanced/comprehension.py
@@ -43,13 +43,13 @@
 2. 目录和文件管理 standardLib/os.py
 3. 日期和时间 standardLib/time.py
 
-#### python 第三方库（openpyxl）
-1. excel数据处理 thirdLib/openpyxl/sample1.py
-2. excel样式处理 thirdLib/openpyxl/sample2.py
-3. openpyxl结合pandas thirdLib/openpyxl/sample3.py
-
 #### python 第三方库（pandas）
 1. Series基础 thirdLib/pandas/sample1.py
 2. DataFrame基础 thirdLib/pandas/sample2.py
 3. DataFrame连接，去重，空值处理 thirdLib/pandas/sample3.py
 4. DataFrame筛选和分组 thirdLib/pandas/sample4.py
+
+#### python 第三方库（openpyxl）
+1. excel数据处理 thirdLib/openpyxl/sample1.py
+2. excel样式处理 thirdLib/openpyxl/sample2.py
+3. openpyxl结合pandas thirdLib/openpyxl/sample3.py
