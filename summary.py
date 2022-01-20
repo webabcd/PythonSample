@@ -4,6 +4,13 @@
 #        不可变类型有 Number数字, String字符串, Bytes字节，Tuple元组（指针不变，则值肯定无法改变；若要修改值，则指针必会改变）
 #        可变类型有 List列表, Set集合, Dictionary字典（指针不变，值可以发生变化）
 # python 文档 https://docs.python.org/3/
+#
+#
+# python 安装
+# 1、https://code.visualstudio.com/ 下载并安装 visual studio code
+# 2、在 visual studio code 中安装 Python 扩展
+# 3、https://www.python.org/downloads/windows/ 下载并安装 Python
+# 4、安装第三方包就类似这么安装 pip install openpyxl
 
 
 # 单行注释
