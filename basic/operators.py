@@ -41,3 +41,5 @@ print(id(a), id(b), a == b, a is b, a is not b) # 1587785078192 1587785086000 Fa
 c = [1, 2, 3]
 d = [1, 2, 3]
 print(id(c), id(d), c == d, c is d, c is not d) # 1587785132928 1587785135808 True False True
+# is, is not 也常用于判断某数据是否是指定的类型
+print(type(3.14) is float) # True

@@ -43,6 +43,13 @@
 2. 目录和文件管理 standardLib/os.py
 3. 日期和时间 standardLib/time.py
 
-#### python 第三方库
-1. openpyxl - excel数据处理 thirdLib/openpyxl/sample1.py
-1. openpyxl - excel样式处理 thirdLib/openpyxl/sample2.py
+#### python 第三方库（openpyxl）
+1. excel数据处理 thirdLib/openpyxl/sample1.py
+2. excel样式处理 thirdLib/openpyxl/sample2.py
+3. openpyxl结合pandas thirdLib/openpyxl/sample3.py
+
+#### python 第三方库（pandas）
+1. Series基础 thirdLib/pandas/sample1.py
+2. DataFrame基础 thirdLib/pandas/sample2.py
+3. DataFrame连接，去重，空值处理 thirdLib/pandas/sample3.py
+4. DataFrame筛选和分组 thirdLib/pandas/sample4.py

@@ -7,7 +7,7 @@ class Class1:
     country = ""
 
     # 通过 __init__ 定义构造函数
-    # 第一个参数必须是 self
+    # 第一个参数必须是 self（调用时不需传此参数，此参数的名称可以任意指定）
     def __init__(self, name, age):
         # 定义公共属性，并赋值
         self.name = name
@@ -22,7 +22,7 @@ class Class1:
         return self.__getString()
 
     # 双下划线开头用于定义私有函数（外部不能调用，子类也不能调用）
-    # 第一个参数必须是 self
+    # 第一个参数必须是 self（调用时不需传此参数，此参数的名称可以任意指定）
     def __getString(self):
         return f"id:{self.__id}, name:{self.name}, age:{self.age}, country:{self.country}"
 
