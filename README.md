@@ -28,9 +28,9 @@
 5. 自定义异常 class/exception.py
 
 #### python 模块，包
-1. 模块1和模块2 class/module1.py,class/module2.py
-2. 模块的引用 class/demo.py
-3. 包 class/player/
+1. 模块1和模块2 module/module1.py, module/module2.py
+2. 模块的引用 module/demo.py
+3. 包 module/player/
 
 #### python 高级
 1. 推导式 advanced/comprehension.py
