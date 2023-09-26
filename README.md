@@ -24,13 +24,15 @@
 1. 基类1（基础知识） class/class1.py
 2. 基类2 class/class2.py
 3. 子类 class/class3.py
-4. 类的使用 class/demo.py
-5. 自定义异常 class/exception.py
+4. with 的用法 class/class4.py
+5. 类的使用 class/demo.py
+6. 自定义异常 class/exception.py
 
 #### python 模块，包
 1. 模块1和模块2 module/module1.py, module/module2.py
 2. 包 module/player/
 3. 模块和包的引用 module/demo.py
+4. 包的应用 module2/main.py
 
 #### python 高级
 1. 推导式 advanced/comprehension.py

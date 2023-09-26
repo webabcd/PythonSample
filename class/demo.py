@@ -2,6 +2,8 @@
 from class1 import Class1
 # 从 class3.py 文件中导入 Class3 类
 from class3 import Class3
+# 从 class4.py 文件中导入 Class4 类
+from class4 import Class4
 
 # 类的使用
 a = Class1("webabcd", 30)
@@ -18,3 +20,14 @@ b.country = "china"
 print(b.toString()) # name:webabcd, age:40, level:100
 # 调用基类的函数
 print(super(Class3, b).toString()) # id:0001, name:webabcd, age:40, country:china
+
+# 演示 with 的用法
+# 实例化时返回的对象是由类的 __enter__ 返回的
+# 退出 with 时会调用对象的 __exit__
+with Class4() as c:   
+    c.hello("webabcd")
+'''
+enter
+hello:webabcd
+exit
+'''
