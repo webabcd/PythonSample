@@ -32,7 +32,7 @@
 1. 模块1和模块2 module/module1.py, module/module2.py
 2. 包 module/player/
 3. 模块和包的引用 module/demo.py
-4. 包的应用 module2/main.py
+4. 包的应用 package/main.py
 
 #### python 高级
 1. 推导式 advanced/comprehension.py

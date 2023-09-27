@@ -32,5 +32,5 @@ videoCodec.show()
 2、导入时是支持星号的，类似这种 from xxx import *
    如果要为 * 定义自定义逻辑，则需要在每个目录中的 __init__.py 文件中写一行类似如下的代码（列表中配置的是当前目录中可以通过 * 导入的 py 文件的名称）
    __all__ = ["aaa", "bbb", "ccc"]
-3、关于包开发的更多说明参见 module2/main.py
+3、关于包开发的更多说明参见 package/main.py
 '''
