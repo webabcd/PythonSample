@@ -40,3 +40,33 @@ print(g)
 h = list(g) # [1, 2, 3]
 print(h)
 
+
+
+# python 解构
+
+# 解构列表
+i = [1, 2, 3]
+i0, i1, i2 = i
+print(i0) # 1
+print(i1) # 2
+print(i2) # 3
+
+# 解构元组
+j = (1, 2, 3)
+j0, j1, j2 = j
+print(j0) # 1
+print(j1) # 2
+print(j2) # 3
+
+# 解构字典
+k = {'name': 'webabcd', 'age': 43}
+name, age = k.values()
+print(name) # webabcd
+print(age)  # 43
+
+# 解构时通过 _ 忽略不需要的元素
+l = [1, 2, 3, 4, 5]
+l0, _, l2, _, l4 = l
+print(l0) # 1
+print(l2) # 3
+print(l4) # 5

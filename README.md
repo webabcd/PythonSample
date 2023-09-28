@@ -12,7 +12,7 @@
 5. 列表类型 datatype/list.py
 6. 集合类型 datatype/set.py
 7. 字典类型 datatype/dictionary.py
-8. 数据类型转换 datatype/conversion.py
+8. 数据类型转换，解构 datatype/conversion.py
 
 #### python 基础
 1. 运算符 basic/operators.py
