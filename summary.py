@@ -62,8 +62,9 @@ e = f = "123"
 print(e)
 print(f)
 
-# 同时为多个变量赋不同的值
-g, h, i = 1, "a", True
+# 同时为多个变量赋不同的值（允许通过 \ 换行）
+g, h, i = 1, \
+    "a", True
 print(g) # 1
 print(h) # a
 print(i) # True

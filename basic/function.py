@@ -9,7 +9,8 @@ def a():
 print(a(), type(a())) # None <class 'NoneType'>
 
 # 无参数，有返回值的函数
-def b():
+# 下面例子中的 -> int 仅做注释用（可以省略），其表示返回值是 int 类型，但是实际上函数可以返回任何类型的值
+def b() -> int:
     return "bbb"
 print(b())
 
@@ -89,3 +90,8 @@ def fun2():
     fun3()
     print(num) # 100
 fun2()
+
+
+# 空语句的函数的写法
+def funA(): pass
+def funB(): ...
