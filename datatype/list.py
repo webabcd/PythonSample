@@ -47,6 +47,8 @@ for x in d:
 
 # 将字符串转换为列表
 print(list("webabcd")) # ['w', 'e', 'b', 'a', 'b', 'c', 'd']
+# 将列表转换为字符串
+print(",".join(list("webabcd"))) # w,e,b,a,b,c,d
 # 定义一个空列表
 print(list()) # []
 # 定义一个空列表
