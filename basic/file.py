@@ -15,12 +15,12 @@ fr.close()
 
 # with 语句，会在代码块执行完后自动调用 close()
 # 写文件
-with open(path, 'w') as fw2:
+with open(path, 'w', encoding='utf-8') as fw2:
     fw2.write('hello webabcd2')
     # 执行完后会自动调用 fw2.close()
 
 # with 语句，会在代码块执行完后自动调用 close()
 # 读文件
-with open(path, 'r') as fr2:
+with open(path, 'r', encoding='utf-8') as fr2:
     print(fr2.read())
     # 执行完后会自动调用 fr2.close()
