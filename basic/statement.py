@@ -47,6 +47,9 @@ for i, v in enumerate(['x', 'y', 'z']): # v 是遍历出的值，i 是其对应�
 # 1 y
 # 2 z
 
+# 通过 for 语句构造一个 list
+print([f'{i} {v}' for i, v in enumerate(['x', 'y', 'z'])]) # ['0 x', '1 y', '2 z']
+
 # try/except/else/finally 语句
 try:
     raise Exception("异常信息") # 抛出一个异常
