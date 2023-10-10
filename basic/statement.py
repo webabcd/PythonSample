@@ -34,12 +34,21 @@ else:
 
 # for 语句（支持 break, continue）
 # 退出循环后会走到 else（不需要的话可以不写 else）
+# 遍历 0 - 4 之间的整数
 for c in range(5):
     print("while c", c)
 else:
     print("else c", c)
 
-# 如何在遍历时拿到值对应的索引位置？
+# 遍历集合中的元素
+for v in ['x', 'y', 'z']:
+    print(v)
+# 上面语句的运行结果如下
+# x
+# y
+# z
+
+# 如何在遍历时拿到值和值对应的索引位置？
 for i, v in enumerate(['x', 'y', 'z']): # v 是遍历出的值，i 是其对应的索引位置
     print(i, v)
 # 上面语句的运行结果如下
