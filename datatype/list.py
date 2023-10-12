@@ -80,3 +80,19 @@ for i, j, k in g:
 # 上面语句的运行结果如下
 # a b c
 # x y z
+
+# filter 的用法
+l = range(10)
+m = list(filter(lambda x: x < 3, l))
+print(m) # [0, 1, 2]
+
+# map 的用法
+n = [{"k":"a"},{"k":"b"},{"k":"c"}]
+o = list(map(lambda p: p["k"], n))
+print(o) # ['a', 'b', 'c']
+
+# reduce 的用法
+from functools import reduce
+p = range(101)
+q = reduce(lambda x, y: x + y, p)
+print(q) #5050
