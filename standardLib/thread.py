@@ -1,4 +1,4 @@
-# 通过 import threading 实现多线程
+# 通过 import threading 实现多线程（注：一个进程同一个时刻只有一个线程在执行，要想利用多核 cpu 则需要用多进程）
 
 import threading
 import time
