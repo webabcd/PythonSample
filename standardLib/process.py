@@ -11,8 +11,10 @@
 
 from multiprocessing import Process
 import time
+import os
 
 def func1(x, y):
+    print(x, y, os.getpid())
     time.sleep(1)
 
 if __name__ == '__main__':
