@@ -19,10 +19,16 @@ loop.close()
 
 
 
+# async 标记的函数就是一个 coroutine，你可以 await 它
 async def func3(name, delay):
     await asyncio.sleep(delay)
     print(name)
 async def sample1():
+    # await 一个 async 函数，直到它执行完毕
+    await func3("i", 1) # 注：这里直接执行 func3("i", 1) 是不可以的，如果需要执行一个 async 函数且不需要等待，则可以 asyncio.create_task(func3("i", 1))
+    await func3("j", 1)
+    await func3("k", 1)
+
     # 并行执行多个异步函数
     await asyncio.gather(
         func3("a", 3),
