@@ -12,7 +12,7 @@
 from multiprocessing import Process
 import time
 
-def func1():
+def func1(x, y):
     time.sleep(1)
 
 if __name__ == '__main__':
@@ -20,7 +20,7 @@ if __name__ == '__main__':
     l=[]
 
     for i in range(10):
-        p = Process(target = func1)
+        p = Process(target=func1, args=(1, 2))
         p.start()
         l.append(p)
 
