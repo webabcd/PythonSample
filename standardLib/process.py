@@ -9,13 +9,22 @@
 # io（网络请求，硬盘存储等）密集型建议用 coroutine，因为它的 cpu 占用率不高，一个核也足够支撑多个 io 任务的同时高效运行
 # 计算密集型建议用多进程，否则会因为单核 cpu 占用极高，而阻塞其他线程或协程的运行
 
-from multiprocessing import Process
+from multiprocessing import Process, multiprocessing
 import time
 import os
 
 def func1(x, y):
     print(x, y, os.getpid())
     time.sleep(1)
+
+# 通过 multiprocessing.Lock() 实现进程同步
+lock = multiprocessing.Lock()
+def myPrint(message):
+    # 获取锁
+    lock.acquire()
+    print(message)
+    # 释放锁
+    lock.release()
 
 if __name__ == '__main__':
     now = time.time()
