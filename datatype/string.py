@@ -60,8 +60,10 @@ print(j) # 我是 webabcd, 今年 40 岁
 print("%.2f" % 3.141592) # 3.14
 
 # 通过 f 格式化字符串
-k = f"我是 {h}, 今年 {i} 岁"
-print(k) # 我是 webabcd, 今年 40 岁
+print(f"我是 {h}, 今年 {i} 岁") # 我是 webabcd, 今年 40 岁
+k = "abc"
+# {} 内的变量后加 = 的格式化后的效果
+print(f'{k=}') # k='abc'
 
 # 通过 format() 格式化字符串
 print('{}, {}'.format('web', 'abcd')) # web, abcd

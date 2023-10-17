@@ -26,6 +26,19 @@ print(bool(1)) # True
 print(bool(0)) # False
 print(bool(-1.2)) # True
 
+# 整型和字节之间的转换
+i = 2048
+# length 代表字节大小，byteorder 代表字节序（大端序就是高位字节存放在低地址端，低位字节存放在高地址端）
+print(i.to_bytes(length=2, byteorder='big')) # 整型转字节。结果 b'\x08\x00'
+print(i.to_bytes(length=2, byteorder='big').hex()) # 整型转字节后再转十六进制字符串。结果 0800
+print(int(i.to_bytes(2, byteorder='big').hex(), 16)) # 整型转字节后再转十六进制字符串，然后再按照十六进制字符串解析为整型。结果 2048
+print(int.from_bytes(bytes=i.to_bytes(length=2, byteorder='big'), byteorder='big')) # 整型转字节再转整型。结果 2048
+
+# 字符串和字节之间的转换
+print(b"xyz") # b'xyz'
+print("xyz".encode()) # b'xyz'
+print(b"xyz".decode()) # xyz
+
 d = [1, 2, 3]
 # 列表转换为集合
 e = set(d) # {1, 2, 3}

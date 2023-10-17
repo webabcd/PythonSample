@@ -44,8 +44,10 @@
 1. 多线程和线程同步 standardLib/thread.py
 2. 异步编程（async/await） standardLib/async.py
 3. 多进程 standardLib/process.py
-4. 目录和文件管理 standardLib/os.py
-5. 日期和时间 standardLib/time.py
+4. 多进程的数据共享 standardLib/process_share.py
+5. 多进程的数据通信 standardLib/process_communication.py
+6. 目录和文件管理 standardLib/os.py
+7. 日期和时间 standardLib/time.py
 
 #### python 第三方库（pandas）
 1. Series基础 thirdLib/pandas/sample1.py
