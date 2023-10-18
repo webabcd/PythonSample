@@ -11,7 +11,7 @@ async def func2():
 # 构造需要并行执行的异步函数列表
 task = [func1(), func2()]
 # 创建事件循环
-loop = asyncio.get_event_loop()
+loop = asyncio.new_event_loop()
 # 阻塞，直至所有异步函数执行完成
 loop.run_until_complete(asyncio.wait(task))
 # 关闭事件循环
