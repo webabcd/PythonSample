@@ -2,6 +2,7 @@
 
 import threading
 import time
+from threading import Timer
 
 # 继承 threading.Thread
 class MyThread(threading.Thread):
@@ -35,9 +36,7 @@ def myPrint(message):
     print(message) # 自己可以测试一下，不用锁的话打印会比较乱，用了锁就不会了
     # 释放锁
     lock.release()
-    
 
-print("主线程开始")
 
 # 创建新线程
 thread1 = MyThread("thread_1")
@@ -54,4 +53,11 @@ thread1.join()
 thread2.join()
 thread3.join()
 
-print("主线程退出")
+
+
+def after():
+    print('after')
+# 通过 timer 实现在指定时间后执行指定函数的功能
+timer = Timer(1, after)
+timer.start()
+timer.join()
