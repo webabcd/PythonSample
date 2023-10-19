@@ -53,6 +53,18 @@ print(g)
 h = list(g) # [1, 2, 3]
 print(h)
 
+# json 字符串与字典表之间的转换
+import json
+dict = {"k1":"v1", "k2":"中文"}
+# 通过 str() 将字典表转换为字符串是单引号的，不符合 json 规范
+print(str(dict)) # {'k1': 'v1', 'k2': '中文'}
+# 通过 json.dumps() 将字典表转换为 json 字符串，其是双引号的，符合 json 规范（默认，非 ascii 字符会被编码）
+print(json.dumps(dict)) # {"k1": "v1", "k2": "\u4e2d\u6587"}
+# 通过 json.dumps() 将字典表转换为 json 字符串，其是双引号的，符合 json 规范（避免 ascii 字符被编码）
+print(json.dumps(dict, ensure_ascii=False)) # {"k1": "v1", "k2": "中文"}
+# 通过 json.loads() 将 json 字符串转换为字典表
+print(json.loads("{\"k\":\"v\"}")) # {'k': 'v'}
+
 
 
 # python 解构
