@@ -15,7 +15,8 @@ def b() -> int:
 print(b())
 
 # 有参数，有返回值的函数
-def c(a, b):
+# 下面例子中的 :int 和 :str 仅做注释用（可以省略），其表示参数的类型，但是实际上可以传任何类型
+def c(a:int, b:str):
     if (b == 0):
         return None # None 的作用相当于其他语言的 null
     return a / b
