@@ -75,6 +75,8 @@ def sample2():
     # 获取 multiprocessing.Manager() 启动的进程的 id
     manager_pid = manager._process.pid
     print("Manager process ID:", manager_pid)
+    # 杀掉 multiprocessing.Manager() 启动的进程
+    manager.shutdown()
     
     lock = multiprocessing.Lock()
     p_list = [multiprocessing.Process(target=func2, args=(i,lock,v_i,v_d,v_c_char_p,m_dict,m_list)) for i in range(10)]
