@@ -3,6 +3,7 @@
 import multiprocessing
 from multiprocessing import shared_memory
 from ctypes import c_char_p
+import os
 
 def func1(i, lock, sm_name):
     lock.acquire()
@@ -69,6 +70,12 @@ def sample2():
     m_dict["k"] = "hello"
     m_list = multiprocessing.Manager().list() # 列表
 
+    # 注：创建一个 multiprocessing.Manager() 时，它会启动一个新的进程来管理这些被共享的对象
+    manager = multiprocessing.Manager()
+    # 获取 multiprocessing.Manager() 启动的进程的 id
+    manager_pid = manager._process.pid
+    print("Manager process ID:", manager_pid)
+    
     lock = multiprocessing.Lock()
     p_list = [multiprocessing.Process(target=func2, args=(i,lock,v_i,v_d,v_c_char_p,m_dict,m_list)) for i in range(10)]
     for p in p_list:
