@@ -2,6 +2,11 @@
 
 import os
 
+# 获取当前目录地址
+print(os.getcwd()) # D:\gitroot\PythonSample
+# 文件路径拼接
+print(os.path.join(os.getcwd(), "a", "b", "x.txt")) # D:\gitroot\PythonSample\a\b\x.txt
+
 # 删除指定目录下的目录和文件（不包括指定目录本身）
 def deleteDir(path):
     # topdown=False 的意思是从下往上遍历（默认是从上往下遍历）
