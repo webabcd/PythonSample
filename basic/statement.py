@@ -11,6 +11,14 @@ elif a == 1:
 else:
     print("a==2")
 
+# if 会强制转换条件，非空字符串会转为 True
+if 'abc':
+    print("if 'abc':")
+
+# if 会强制转换条件，空字符串会转为 False
+if not '':
+    print("if not '':")
+
 # value1 if condtion else value2
 print("奇数" if 1 % 2 else "偶数") # 奇数
 print("奇数" if 2 % 2 else "偶数") # 偶数
