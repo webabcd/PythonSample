@@ -16,6 +16,8 @@ print(a["a"]) # myvalue_abc
 # 演示如何实现类似静态属性的效果
 Class1.country = "PRC"
 print(Class1.country)
+# 演示静态方法的用法
+print(Class1.static_method("webabcd"))
 
 # 类的使用
 b = Class3("webabcd", 40, 100)

@@ -36,3 +36,8 @@ class Class1:
         return None
     def __delitem__(self, name): 
         del self.__dict[name] 
+
+    # 定义静态方法
+    @staticmethod
+    def static_method(name):
+        return "hello: " + name
