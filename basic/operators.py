@@ -44,5 +44,5 @@ print(id(c), id(d), c == d, c is d, c is not d) # 1587785132928 1587785135808 Tr
 # is, is not 也常用于判断某数据是否是指定的类型
 print(type(3.14) is float) # True
 
-# 通过 for 语句实现类似三目运算符 ? : 的效果（注：python 不支持三目运算符 ? :）
+# 三元表达式，类似三目运算符 ? : 的效果（注：python 不支持三目运算符 ? :）
 print("abc" if False else "xyz") # xyz
