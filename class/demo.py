@@ -9,7 +9,7 @@ from class4 import Class4
 a = Class1("webabcd", 30)
 a.country = "china"
 a.age = 40
-print(a.toString()) # id:0001, name:webabcd, age:40, country:china
+print(a.toString()) # id:0001, name:webabcd, age:40, country:china - name:webabcd, age:40, level:100
 # 演示如何使用 [] 方式的操作（相关逻辑请看 Class1 类的代码）
 a["a"] = "abc"
 print(a["a"]) # myvalue_abc

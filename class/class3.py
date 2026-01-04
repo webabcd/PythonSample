@@ -13,7 +13,8 @@ class Class3(Class1, Class2):
 
     # 重写基类的函数
     def toString(self):
-        return f"name:{self.name}, age:{self.age}, level:{self.level}"
+        # super() - 用于调用基类的函数
+        return super().toString() + " - " + f"name:{self.name}, age:{self.age}, level:{self.level}"
 
 
 '''
