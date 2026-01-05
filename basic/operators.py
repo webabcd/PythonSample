@@ -9,8 +9,6 @@ print(-5 // 2) # -3
 
 # 比较运算符 == != > < >= <=
 
-# 赋值运算符 = += -= *= /= %= **= //=
-
 # 位运算符 & | ^ ~ << >>
 # & 与，两位都为 1 则结果为 1
 # | 或，两位有一个为 1 则结果为 1
@@ -19,9 +17,16 @@ print(-5 // 2) # -3
 # << 左移，左移指定的位数，高位丢弃，低位补 0
 # >> 右移，右移指定的位数，高位补 0（不一定？），低位丢弃
 
+# 赋值运算符 = += -= *= /= %= **= //= &= |= ^= >>= <<=
+x = True
+x &= True
+print(x) # True
+
 # 逻辑运算符 and, or, not
 print(True and False) # False
+print(True & False) # False
 print(True or False) # True
+print(True | False) # True
 print(not False) # True
 
 # 成员运算符 in, not in
