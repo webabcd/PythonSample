@@ -89,6 +89,12 @@ name, age = k.values()
 print(name) # webabcd
 print(age)  # 43
 
+# 解构字典（通过 ** 的方式）
+def print_user(name, age, city):
+    print(f"city:{name}，age:{age}，city:{city}") # city:webabcd，age:44，city:北京
+user_info = {"name": "webabcd", "age": 44, "city": "北京"}
+print_user(**user_info)
+
 # 解构时通过 _ 忽略不需要的元素
 l = [1, 2, 3, 4, 5]
 l0, _, l2, _, l4 = l
