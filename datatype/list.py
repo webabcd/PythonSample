@@ -96,3 +96,7 @@ from functools import reduce
 p = range(101)
 q = reduce(lambda x, y: x + y, p)
 print(q) #5050
+
+# 空列表等价于 False
+if not []:
+    print("列表为空")
