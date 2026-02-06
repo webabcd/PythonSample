@@ -19,6 +19,14 @@ if 'abc':
 if not '':
     print("if not '':")
 
+# None 会转为 False
+if not None:
+    print("if not None:")
+
+# 空列表会转为 False
+if not []:
+    print("if not []:")
+
 # value1 if condtion else value2
 print("奇数" if 1 % 2 else "偶数") # 奇数
 print("奇数" if 2 % 2 else "偶数") # 偶数
